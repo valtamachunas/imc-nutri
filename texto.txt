@@ -1,0 +1,28 @@
+DOM - é a representação do mundo html no seu js
+document da acesso ao DOM; ponte entre js e html; ele apresenta a pagina em seu browser; tudo que alterar nele o cliente ve;
+document.querySelector('h1') essa função deixa voce pegar pequenos pedaços da pagina para editar depois; 
+Uma boa pratica é colocar o js no final do body só porque ai a pagina ja vai estar carregada e ele vai encontrar o js;
+o textContent vai pegar apenas o conteudo da tag; 
+o console.log serve para voce executar os codigos js no console, para facilitar na visualização;
+a querySelector traz apenas um elementos, a querySelectorAll traz todos;
+quando voce escuta um evento da pra criar uma função direto nele pra ser chamada depois de um clique por exemplo titulo.addEventListener('click', function (){
+    console.log('da pra criar direto aqui')
+}); sao chamadas de funções anonimas, que serão usadas só neste pedaço de codigo que estão chamando ela e nao serão reaproveitadas depois;
+Funções anonimas são criadas na própria chamada de codigo;
+todo elemento que o usuario escreve algo, possui a propriedade value, os que apenas exibe info a gente usa textContent;
+quando selecionamos um form com querySelector podemos selecionar os inputs dele atraves do name(propriedade);
+ao inves de usar o addEventListener()podemos usar o onclick ou onmouseover, da na mesma, portanto, essas se sobrescrevem enquanto a addEventListener pode usar uma embaixo
+da outra que elas vão ser executadas uma de cada vez como se fosse uma fila; 
+objeto representa as coisas do mundo real que tem caracteristicas em comum; usa {} pra fazer;
+o objeto guarda todas as propriedades de alguma coisa;
+em js todo array possui o forEach() onde vamos passar uma funçao por parametro pra ser realizado o que quisermos e essa funçao recebe como 
+paramentro um dos elementos do array; 
+o innerHTML nos traz o valor interno de um html e podemos modificalo usando essa mesma propriedade; 
+quando usa o addEventListener() ele é igual uma bolha de refri que vai de baixo subindo até em cima, se voce usa no filho os pais vao escutando
+esse evento tambem, entao vai indo dos pais pros filhos de baixo pra cima; 
+API é uma interface de programação que disponibiliza os dados para nós prontos para usar; API é um arquivo que mostra um JSON;
+Json é um objeto do js, um jeito de poder transportar pela a web dados parecidos com objetos de js e ele pode ser convertido facilmente em
+um obj de js ou array; 
+O AJAX é usado para fazer requisição no JS de forma assincrono q significa que nao parou de carregar pra buscar uma informação, ele continua
+carregando normalmente as coisas enquanto faz a requisição. AJAX é a tecnica de fazer requisição de modo assincrono sem travar o js;
+
